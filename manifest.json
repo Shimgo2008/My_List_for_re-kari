@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "nicovideo mylist for (re:仮)",
+  "version": "0.0.1",
+  "permissions": [
+    "bookmarks",
+    "tabs",
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://www.nicovideo.jp/*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.nicovideo.jp/*"],
+      "js": ["contentScript.js"]
+    }
+  ],
+  "icons":{
+    "128": "nicore.png"
+  }
+}

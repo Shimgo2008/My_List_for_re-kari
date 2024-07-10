@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bookmark Extractor</title>
+  <style>
+    body {
+      width: 200px;
+      font-family: Arial, sans-serif;
+    }
+    input, button {
+      width: 100%;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Folder Name</h1>
+  <h3>loop?</h3>
+  <input type="checkbox" id="loopCheckbox" name="loop" value="loop">
+  <input type="text" id="folderNameInput" list="folderNameList" placeholder="Enter folder name" />
+  <datalist id="folderNameList"></datalist>
+  <button id="extractButton">Extract URLs</button>
+  <script src="popup.js"></script>
+</body>
+</html>
